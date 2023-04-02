@@ -1,31 +1,32 @@
-import React, { Component, lazy } from 'react';
+import React, { Component, lazy } from "react";
 
 import {
   createBrowserRouter,
   RouteObject,
   RouterProvider,
-  useLocation,
-  useNavigate,
-  useParams,
-  useSearchParams,
 } from "react-router-dom";
-
-import Home from './page/Home';
-const Template = lazy(() => import('./component/Template'));
-
-const Element = (props: any) => {
- 
+import Example1 from "./page/Example/Example1";
+import Example2 from "./page/Example/Example2";
+import Home from "./page/Home/Home";
+// const Template = lazy(() => import('./component/Template'));
 
 const routes: RouteObject[] = [
   {
     path: "/",
     element: <Home />,
-    errorElement: <ErrorPage />,
   },
   {
-    path: "template",
-    element: <Template />,
+    path: "/example1",
+    element: <Example1 />,
   },
+  {
+    path: "/example2",
+    element: <Example2 />,
+  },
+  // {
+  //   path: "template",
+  //   element: <Template />,
+  // },
 ];
 
 const router = createBrowserRouter(routes);

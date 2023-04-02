@@ -1,13 +1,9 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import Router from "./Router";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  return (
-    <div className="App">
-      <motion.div>X</motion.div>
-    </div>
-  );
+  return <Router />;
 }
 
 export default App;
