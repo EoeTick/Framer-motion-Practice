@@ -14,7 +14,11 @@ const Example1 = () => {
   const h1Opacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
 
   const ref = useRef<HTMLDivElement>(null);
-  const theChipWidth = useTransform(scrollYProgress, (value) => {});
+  const theChipWidth = useTransform(
+    scrollYProgress,
+    (value) =>
+      document.documentElement.clientWidth * 20 * value * value * value + "px"
+  );
 
   useEffect(() => {
     if (ref.current) {
