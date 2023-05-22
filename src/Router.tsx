@@ -10,6 +10,8 @@ import Example2 from "./page/Example/scroll/Example2";
 import Example3 from "./page/Example/scroll/Example3";
 import Example4 from "./page/Example/scroll/Example4";
 import Example5 from "./page/Example/scroll/Example5";
+import Codrops1 from "./page/Example/codrops/Example1";
+import Coding1 from "./page/Example/codingStartup/Example1";
 import Home from "./page/Home/Home";
 // const Template = lazy(() => import('./component/Template'));
 
@@ -37,6 +39,15 @@ const routes: RouteObject[] = [
   {
     path: "/example5",
     element: <Example5 />,
+  },
+
+  {
+    path: "/codrops/example1",
+    element: <Codrops1 />,
+  },
+  {
+    path: "/codingStartup/example1",
+    element: <Coding1 />,
   },
   // {
   //   path: "template",
