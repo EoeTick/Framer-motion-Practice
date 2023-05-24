@@ -8,7 +8,6 @@ import {
 import Example1 from "./page/Example/Example1";
 import Example2 from "./page/Example/scroll/Example2";
 import Example3 from "./page/Example/scroll/Example3";
-import Example4 from "./page/Example/scroll/Example4";
 import Example5 from "./page/Example/scroll/Example5";
 import Codrops1 from "./page/Example/codrops/Example1";
 import Coding1 from "./page/Example/codingStartup/Example1";
@@ -33,10 +32,6 @@ const routes: RouteObject[] = [
     element: <Example3 />,
   },
   {
-    path: "/example4",
-    element: <Example4 />,
-  },
-  {
     path: "/example5",
     element: <Example5 />,
   },
@@ -45,6 +40,11 @@ const routes: RouteObject[] = [
     path: "/codrops/example1",
     element: <Codrops1 />,
   },
+  {
+    path: "/codingStartup/example1",
+    element: <Coding1 />,
+  },
+
   {
     path: "/codingStartup/example1",
     element: <Coding1 />,

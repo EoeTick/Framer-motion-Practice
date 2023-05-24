@@ -3,11 +3,10 @@ import { routeList } from "../../data/routeList";
 function Home() {
   return (
     <div className="container-xl">
-      <ul className="list-group list-group-flush">
+      <h3>Title</h3>
+      <ul className="list-group list-group-flush" style={{ height: "100vh" }}>
         {routeList.map((route) => (
-          <li className="list-group-item">
-            <Link to={route.to}>{route.name}</Link>
-          </li>
+          <Link className="list-group-item list-group-item-action" key={route.name} to={route.to}>{route.name}</Link>
         ))}
       </ul>
     </div>
