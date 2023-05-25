@@ -12,6 +12,7 @@ const routeList: route[] = [
   { name: "codingStartup example1", to: "codingStartup/example1" },
   { name: "codingStartup example2", to: "codingStartup/example2" },
   { name: "codingStartup example3", to: "codingStartup/example3" },
+  { name: "codingStartup example4", to: "codingStartup/example4" },
 ];
 
 export { routeList };

@@ -5,12 +5,14 @@ import {
   RouteObject,
   RouterProvider,
 } from "react-router-dom";
-import Example1 from "./page/Example/Example1";
-import Example2 from "./page/Example/scroll/Example2";
-import Example3 from "./page/Example/scroll/Example3";
-import Example5 from "./page/Example/scroll/Example5";
-import Codrops1 from "./page/Example/codrops/Example1";
-import Coding1 from "./page/Example/codingStartup/Example1";
+const Example1 = lazy(() => import("./page/Example/Example1"));
+const Example2 = lazy(() => import("./page/Example/scroll/Example2"));
+const Example3 = lazy(() => import("./page/Example/scroll/Example3"));
+const Example5 = lazy(() => import("./page/Example/scroll/Example5"));
+const Coding1 = lazy(() => import("./page/Example/codingStartup/Example1"));
+const Coding2 = lazy(() => import("./page/Example/codingStartup/Example2"));
+const Coding3 = lazy(() => import("./page/Example/codingStartup/Example3"));
+const Coding4 = lazy(() => import("./page/Example/codingStartup/Example4"));
 import Home from "./page/Home/Home";
 // const Template = lazy(() => import('./component/Template'));
 
@@ -35,19 +37,21 @@ const routes: RouteObject[] = [
     path: "/example5",
     element: <Example5 />,
   },
-
-  {
-    path: "/codrops/example1",
-    element: <Codrops1 />,
-  },
   {
     path: "/codingStartup/example1",
     element: <Coding1 />,
   },
-
   {
-    path: "/codingStartup/example1",
-    element: <Coding1 />,
+    path: "/codingStartup/example2",
+    element: <Coding2 />,
+  },
+  {
+    path: "/codingStartup/example3",
+    element: <Coding3 />,
+  },
+  {
+    path: "/codingStartup/example4",
+    element: <Coding4 />,
   },
   // {
   //   path: "template",

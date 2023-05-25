@@ -25,7 +25,7 @@ const Example1 = () => {
   );
 
   return (
-    <div className="body">
+    <div className="body1">
       <section id="chip-section">
         <video
           src="https://www.apple.com/105/media/us/macbook-pro-14-and-16/2022/1baf5961-c793-48e7-9efd-0d23cac1e101/anim/wild_beasts/large.mp4"
