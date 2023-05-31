@@ -1,0 +1,12 @@
+.container {
+  height: 100vh;
+  background-image: url(../../../assets/mesh-gradient.png);
+}
+
+.point {
+  --size: 20px;
+  height: var(--size);
+  width: var(--size);
+  background-color: #fff;
+  border-radius: 50%;
+}

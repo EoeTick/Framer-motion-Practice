@@ -13,6 +13,10 @@ const Coding1 = lazy(() => import("./page/Example/codingStartup/Example1"));
 const Coding2 = lazy(() => import("./page/Example/codingStartup/Example2"));
 const Coding3 = lazy(() => import("./page/Example/codingStartup/Example3"));
 const Coding4 = lazy(() => import("./page/Example/codingStartup/Example4"));
+const Coding5 = lazy(() => import("./page/Example/codingStartup/Example5"));
+const Coding6 = lazy(() => import("./page/Example/codingStartup/Example6"));
+const Like1 = lazy(() => import("./page/Example/like/Example1"));
+
 import Home from "./page/Home/Home";
 // const Template = lazy(() => import('./component/Template'));
 
@@ -52,6 +56,18 @@ const routes: RouteObject[] = [
   {
     path: "/codingStartup/example4",
     element: <Coding4 />,
+  },
+  {
+    path: "/codingStartup/example5",
+    element: <Coding5 />,
+  },
+  {
+    path: "/codingStartup/example6",
+    element: <Coding6 />,
+  },
+  {
+    path: "/like/example1",
+    element: <Like1 />,
   },
   // {
   //   path: "template",
