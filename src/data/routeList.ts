@@ -14,7 +14,11 @@ const routeList: route[] = [
   { name: "codingStartup example3", to: "codingStartup/example3" },
   { name: "codingStartup example4", to: "codingStartup/example4" },
   { name: "codingStartup example5", to: "codingStartup/example5" },
-  { name: "codingStartup exampl6e", to: "codingStartup/example6" },
+  { name: "codingStartup example6", to: "codingStartup/example6" },
+  { name: "codingStartup example7", to: "codingStartup/example7" },
+  { name: "codingStartup example8", to: "codingStartup/example8" },
+  { name: "codingStartup example9", to: "codingStartup/example9" },
+  { name: "codingStartup example10", to: "codingStartup/example10" },
   { name: "like example1", to: "like/example1" },
 ];
 
